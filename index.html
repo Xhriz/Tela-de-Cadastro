@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form>
+      <h1>Cadastro</h1>
+      <p>Complete suas informações</p>
+      <br>
+      
+        <div >
+            <label >Nome</label>
+            <input type="text" id="nome" required>
+     
+            <label>Sobrenome</label>
+            <input type="text" id="sobrenome" required>
+        </div>
+      
+
+      <div>
+        <label class="email">E-mail</label>
+        <input type="email" id="email" required>
+      
+        <label class="senha">Senha</label>
+        <input type="password" id="senha" required>
+      </div>
+
+      <div class="funcao">
+        <label>Qual a sua função?</label>
+        
+            <input type="radio" name="devweb" value="frontend">Front-end
+            <input type="radio" name="devweb" value="backend">Back-end
+            <input type="radio" name="devweb" value="fullstack">Fullstack
+      </div>
+      <div>
+        <label>Senioridade:</label>
+        <select>
+            <option selected disabled value="">Selecione</option>
+            <option>Junior</option>
+            <option>Pleno</option>
+            <option>Senior</option>
+        </select>
+      </div>
+
+      
+        <div>
+          <label>Selecione as tecnologias que utiliza:</label><br>
+          <input type="checkbox" id="tec1" value="HTML">
+          <label for="tec1">HTML</label>
+          <input type="checkbox" id="tec2" value="CSS">
+          <label for="tec2">CSS</label>
+          <input type="checkbox" id="tec3" value="Javascript">
+          <label for="tec3">Javascript</label>
+          <input type="checkbox" id="tec4" value="PHP">
+          <label for="tec4">PHP</label>
+          <input type="checkbox" id="tec5" value="C#">
+          <label for="tec5">C#</label>
+          <input type="checkbox" id="tec6" value="Python">
+          <label for="tec6">Python</label>
+          <input type="checkbox" id="tec7" value="Java">
+          <label for="tec7">Java</label>
+        </div>
+      
+
+      <div>
+        <br>
+        <label>Conte um pouco sobre sua experiência:</label><br>
+        <textarea name="experiencia" id="experiencia" rows="6" style="width: 26em;"></textarea>
+      </div>
+      <button type="submit">Concluído</button>
+
+    </form>
+    
+</body>
+</html>
